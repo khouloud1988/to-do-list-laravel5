@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>To-do list</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<style media="screen">
+  .almond-text{
+    color:#26a69a;
+  }
+</style>
+  </head>
+<body>
+  <div class="container">
+    <p>
+      Logged as <b>khouloud Haddad</b>
+      <a class="waves-effect waves-light btn">Logout</a>
+    </p>
+    <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons almond-text">person_add</i>
+        Invitations
+        <span class="new badge">4</span></div>
+      <div class="collapsible-body">
+        <p>
+          <span class="red-text"><b>Buzz khouloud</b></span> <a href="">accept</a> | <a href="">deny</a>
+        </p>
+        <p>
+          <span class="red-text"><b>Buzz Harry Potter</b></span> <a href="">accept</a> | <a href="">deny</a>
+        </p>
+        <p>
+          <span class="red-text"><b>Buzz Larry Dom</b></span> <a href="">accept</a> | <a href="">deny</a>
+        </p>
+        <p>
+          <span class="red-text"><b>Buzz Isam Red</b></span> <a href="">accept</a> | <a href="">deny</a>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <h1 class="center-align almond-text text-darken-2">To-do list</h1>
+
+  <table>
+       <thead>
+         <tr>
+             <th>Task</th>
+             <th>Assigned to</th>
+             <th>Edit</th>
+             <th>Delete</th>
+         </tr>
+       </thead>
+
+       <tbody>
+         <tr>
+           <td><a href="">Slim down to 10kg</a></td>
+           <td>Khouloud Amamou</td>
+           <td><a title="edit" href=""><i class="small material-icons">edit</i></a></td>
+           <td><a title="delete" href=""><i class="small material-icons">delete_forever</i></a></td>
+         </tr>
+
+         <tr>
+           <td><a href="">Order 20 pepsi boxes</a></td>
+           <td>Slim Riahi</td>
+           <td><a title="edit" href=""><i class="small material-icons">edit</i></a></td>
+           <td><a title="delete" href=""><i class="small material-icons">delete_forever</i></a></td>
+         </tr>
+
+         <tr>
+           <td><a href=""><strike>Repair the door lock</strike></a></td>
+           <td>Fuller Hadded</td>
+           <td><a title="edit" href=""><i class="small material-icons">edit</i></a></td>
+           <td><a title="delete" href=""><i class="small material-icons">delete_forever</i></a></td>
+         </tr>
+
+         <tr>
+           <td><a href="">Feed cheeps</a></td>
+           <td>Harry Lime</td>
+           <td><a title="edit" href=""><i class="small material-icons">edit</i></a></td>
+           <td><a title="delete" href=""><i class="small material-icons">delete_forever</i></a></td>
+         </tr>
+       </tbody>
+     </table>
+     <ul class="pagination">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+<!--create task form-->
+    <form class="col s12">
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="task" type="text" class="validate">
+          <label for="task">New Task</label>
+        </div>
+      </div>
+
+      <div class="input-field col s12 padding">
+      <select>
+          <option value="" disabled selected>Assign to:</option>
+          <option value="1">To myself </option>
+          <option value="2">To Slim Riahi</option>
+          <option value="3">to Fuller Hadded</option>
+          <option value="4">to Harry Lime</option>
+          <option value="5">to Closer Door</option>
+      </select>
+      <label>Assign task</label>
+
+    </div>
+    <a class="waves-effect waves-light btn">Add new task</a>
+    </form>
+<br><br><br>
+    <ul class="collection with-header">
+        <li class="collection-header"><h4>My coworkers</h4></li>
+        <li class="collection-item"><div>Khouloud Amamou<a href="#!" class="secondary-content">delete</a></div></li>
+        <li class="collection-item"><div>Slim Riahi<a href="#!" class="secondary-content">delete</a></div></li>
+        <li class="collection-item"><div>Fuller Hadded<a href="#!" class="secondary-content">delete</a></div></li>
+        <li class="collection-item"><div>Harry Lime<a href="#!" class="secondary-content">delete</a></div></li>
+        <li class="collection-item"><div>Closer Door<a href="#!" class="secondary-content">delete</a></div></li>
+    </ul>
+<!--Edit task form-->
+<form class="col s12">
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input value="Task content to edit" id="task2" type="text" class="validate">
+      <label for="task2">Edit Task</label>
+    </div>
+  </div>
+<a class="waves-effect waves-light btn">Edit task</a>
+</form>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script >
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems);
+  <!--dropDown-->
+  var elemss = document.querySelectorAll('select');
+    var instancess = M.FormSelect.init(elemss);
+});
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+  $('select').formSelect();
+});
+</script>
+  </body>
+</html>
